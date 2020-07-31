@@ -10,20 +10,25 @@
         <section>
             <img src="./img/largeIMG.jpg" id="slider" />
             <ul class="navigation">
-                <li>
+                <li onclick="imgSlider('./img/EEWMQSsWkAAUFDR.jpg')">
                     <img src="./img/EEWMQSsWkAAUFDR.jpg" id="EEWMQSsWkAAUFDR" />
                 </li>
-                <li>
+                <li onclick="imgSlider('./img/maxresdefault.jpg')">
                     <img src="./img/maxresdefault.jpg" id="maxresdefault" />
                 </li>
-                <li>
-                    <img
-                        src="./img/pc-build-kit-frame.jpg"
-                        id="pc-build-kit-frame"
-                    />
+                <li onclick="imgSlider('./img/IMGLarg.jpg')">
+                    <img src="./img/IMGLarg.jpg" id="IMG" />
+                </li>
+                <li onclick="imgSlider('./img/pc.jpg')">
+                    <img src="./img/pc.jpg" id="pc" />
                 </li>
             </ul>
-            <h2>Img Slide</h2>
+            <h2>Picture Slide Test</h2>
         </section>
+        <script type="text/javascript">
+            function imgSlider(anything) {
+                document.getElementById("slider").src = anything;
+            }
+        </script>
     </body>
 </html>
